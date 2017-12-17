@@ -1,0 +1,10 @@
+E:\FER\C#\Visual Studio\hw3\Z1\bin\Debug\Z1.dll.config
+E:\FER\C#\Visual Studio\hw3\Z1\bin\Debug\Z1.dll
+E:\FER\C#\Visual Studio\hw3\Z1\bin\Debug\Z1.pdb
+E:\FER\C#\Visual Studio\hw3\Z1\bin\Debug\EntityFramework.dll
+E:\FER\C#\Visual Studio\hw3\Z1\bin\Debug\EntityFramework.SqlServer.dll
+E:\FER\C#\Visual Studio\hw3\Z1\bin\Debug\EntityFramework.xml
+E:\FER\C#\Visual Studio\hw3\Z1\bin\Debug\EntityFramework.SqlServer.xml
+E:\FER\C#\Visual Studio\hw3\Z1\obj\Debug\Z1.csproj.CoreCompileInputs.cache
+E:\FER\C#\Visual Studio\hw3\Z1\obj\Debug\Z1.dll
+E:\FER\C#\Visual Studio\hw3\Z1\obj\Debug\Z1.pdb

@@ -1,0 +1,35 @@
+﻿@model Z2.Models.TodoViewModels.AddTodoViewModel
+
+<html>
+
+<head>
+    <title>Dodavanje novog posla</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+
+<body>
+<h1>Dodavanje novog posla</h1>
+
+<form asp-action="AddItem" method="post" style="width: 20rem;">
+    <div class="form-group">
+        <label for="Text">Naziv posla:</label>
+        <input class="form-control" asp-for="Text"/>
+        <span class="form-text text-muted" asp-validation-for="Text"></span>
+
+        <label for="Labels">Naziv labele:</label>
+        <input class="form-control" asp-for="Labels"/>
+        <span class="form-text text-muted" asp-validation-for="Labels"></span>
+
+        <label for="DateDue">Krajnji rok posla:</label>
+        <input class="form-control" asp-for="DateDue" type="datetime"/>
+        <span class="form-text text-muted" asp-validation-for="DateDue"></span>
+
+        <input type="submit" class="btn btn-primary"/>
+
+        <a class="btn btn-primary" asp-controller="Todo" asp-action="Index">Povratak</a>
+    </div>
+</form>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+E:\FER\C#\Visual Studio\hw3\Z2.Tests\obj\Debug\Z2.Tests.csprojResolveAssemblyReference.cache
+E:\FER\C#\Visual Studio\hw3\Z2.Tests\obj\Debug\Z2.Tests.csproj.CoreCompileInputs.cache

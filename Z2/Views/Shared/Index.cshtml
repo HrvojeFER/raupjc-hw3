@@ -1,0 +1,32 @@
+﻿@model Z2.Models.TodoViewModels.IndexViewModel
+
+<html>
+
+<head>
+    <title>Početna stranica</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+
+<body>
+    <h1>ToDo</h1>
+    <div>
+        <a class="btn btn-primary" asp-controller="Todo" asp-action="Add">Dodajte novi posao</a>
+        <a asp-controller="Todo" asp-action="Completed">Pregled dovršenih poslova</a>
+    </div>
+
+    @foreach (var x in Model.Models)
+    {
+        @Html.Partial("Item", x)
+    }
+
+    @if (Model.Models.Count == 0)
+    {
+        <div class="card card-body mx-auto" style="width: 20rem;">
+            <h4 class="card-title" align="center">Nemate poslova u tijeku.</h4>
+            <a class="btn btn-primary" asp-controller="Todo" asp-action="Add">Dodajte novi posao</a>
+        </div>
+    }
+</body>
+
+</html>

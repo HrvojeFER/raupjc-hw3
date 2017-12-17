@@ -1,0 +1,23 @@
+﻿@model Z2.Models.TodoViewModels.TodoViewModel
+
+<div class="card card-body mx-auto" style="width: 20rem;">
+    <h4 class="card-title">@Model.Text</h4><br>
+
+    @if (Model.DateDue.HasValue)
+    {
+        @Model.DateDue.Value.ToString("d. mmmm yyyy.")
+        if (Model.ShowReminder())
+        {
+            <span class="text-danger">(@Model.Remaining())</span>
+        }
+    }
+    
+    @if (Model.IsCompleted)
+    {
+        <a class="btn btn-primary" href="/todo/toggleCompleted/@Model.Id">Uklonite posao sa liste</a>
+    }
+    else
+    {
+        <a class="btn btn-primary" href="/todo/toggleCompleted/@Model.Id">Označite posao kao gotov</a>
+    }
+</div>
